@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     parameters {  
         string(name: 'NAMESPACE', defaultValue: 'ingress-basic', description: 'namespace to deploy nginx') //assumes namespace exists
         string(name: 'REPLICAS', defaultValue: '2', description: 'number of nginx replicas')
